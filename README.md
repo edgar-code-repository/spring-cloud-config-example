@@ -1,10 +1,10 @@
 Config Service Example / Config Client Example
 --------------------------------------------------------------------------------------------------------------------
 
-Microservicios de ejemplo, desarrollados con Spring Boot y Spring Cloud, que actúa como servicio de configuración 
+Microservicios de ejemplo, desarrollados con Spring Boot y Spring Cloud, que actuan como servicio de configuración 
 y servicio cliente del servicio de configuración.
 
-El servicio de configuración levantala los datos de configuración desde un repositorio GIT:
+El servicio de configuración levanta los datos de configuración desde un repositorio GIT:
 
 https://github.com/edgar-code-repository/config-repository-example
 
@@ -36,7 +36,7 @@ del servicio de configuración:
 La aplicación cliente se levanta en el puerto informado por el servicio de configuración, y el controller rest
 a su vez, retorna los mensajes que obtuvo desde el servicio de configuración:
 
-![Screenshot Properties](screenshots/config-client-properties.png)
+![Screenshot Properties](screenshots/message-returned-by-rest-controller.png)
 
 --------------------------------------------------------------------------------------------------------------------
 
