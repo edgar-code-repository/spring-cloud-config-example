@@ -19,7 +19,8 @@ servicio y la URL de Github desde donde se extraen datos de configuración:
 --------------------------------------------------------------------------------------------------------------------
 
 El servicio de configuración se levanta en el puerto 8888, y se observa que tiene datos de configuración disponibles 
-para un servicio cuyo nombre es "config-client-example", el cual debe levantarse en el puerto 5551:
+para un servicio cuyo nombre es "config-client-example", el cual debe levantarse en el puerto 5551.
+Además, se definen dos strings ("title", "message") a ser utilizados por la aplicación cliente:
 
 ![Screenshot Properties](screenshots/config-client-configuration.png)
 
