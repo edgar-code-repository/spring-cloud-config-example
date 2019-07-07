@@ -1,10 +1,10 @@
 Config Service and Config Client Example
 --------------------------------------------------------------------------------------------------------------------
 
-Microservicios de ejemplo, desarrollados con Spring Boot y Spring Cloud, que levantan un servicio de configuracion 
-y un servicio que lee datos desde el servicio de configuracion.
+Microservicios de ejemplo, desarrollados con Spring Boot y Spring Cloud, que levantan un servicio de configuración 
+y un servicio que lee datos desde el servicio de configuración.
 
-El servicio de configuracion levanta los datos desde un repositorio GIT:
+El servicio de configuración levanta los datos desde un repositorio GIT:
 
 https://github.com/edgar-code-repository/config-repository-example
 
@@ -34,7 +34,7 @@ desde un repositorio git:
 
 **Anotaciones:**
 
-La anotacion @EnableConfigServer permite que el servicio actue como un servicio de configuracion:
+La anotacion @EnableConfigServer permite que el servicio actue como un servicio de configuración:
 
 ```
 
@@ -52,9 +52,9 @@ public class ConfigServiceExampleApplication {
 
 **Ejecucion:**
 
-El servicio de configuracion se levanta en el puerto 8888, y se observa que tiene datos de disponibles 
+El servicio de configuración se levanta en el puerto 8888, y se observa que tiene datos disponibles 
 para un servicio cuyo nombre es "config-client-example", el cual debe levantarse en el puerto 5551.
-Ademas, se definen dos strings ("title", "message") a ser utilizados por la aplicacion cliente:
+Además, se definen dos strings ("title", "message") a ser utilizados por la aplicación cliente:
 
 ![Screenshot Properties](screenshots/config-client-configuration.png)
 
@@ -64,7 +64,7 @@ Ademas, se definen dos strings ("title", "message") a ser utilizados por la apli
 
 **Dependencias:**
 
-La siguiente dependencia permite actuar como cliente del servicio de configuracion:
+La siguiente dependencia permite actuar como cliente del servicio de configuración:
 
 ```
   <dependency>
@@ -79,7 +79,7 @@ La siguiente dependencia permite actuar como cliente del servicio de configuraci
 El nombre del archivo application.properties es modificado a bootstrap.properties.
 
 En el archivo bootstrap.properties, se identifica el servicio y se registra la URL 
-del servicio de configuracion:
+del servicio de configuración:
 
 ![Screenshot Properties](screenshots/config-client-properties.png)
 
