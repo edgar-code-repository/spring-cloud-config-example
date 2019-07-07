@@ -34,7 +34,7 @@ desde un repositorio git:
 
 **Anotaciones:**
 
-La anotacion @EnableConfigServer permite levantas que el servicio actue como un servicio de configuracion:
+La anotacion @EnableConfigServer permite que el servicio actue como un servicio de configuracion:
 
 ```
 
@@ -49,6 +49,8 @@ public class ConfigServiceExampleApplication {
 }
 
 ```
+
+**Ejecucion:**
 
 El servicio de configuracion se levanta en el puerto 8888, y se observa que tiene datos de disponibles 
 para un servicio cuyo nombre es "config-client-example", el cual debe levantarse en el puerto 5551.
@@ -80,6 +82,8 @@ En el archivo bootstrap.properties, se identifica el servicio y se registra la U
 del servicio de configuracion:
 
 ![Screenshot Properties](screenshots/config-client-properties.png)
+
+**Ejecucion:**
 
 La aplicación cliente se levanta en el puerto informado por el servicio de configuración, y el controller rest
 a su vez, retorna los mensajes que obtuvo desde el servicio de configuración:
