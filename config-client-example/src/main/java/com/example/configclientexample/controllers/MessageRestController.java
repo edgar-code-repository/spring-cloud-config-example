@@ -18,5 +18,4 @@ public class MessageRestController {
         return "<h2>" + this.title + "</h2><br/>" + this.message;
     }
 
-
 }
