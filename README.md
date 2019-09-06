@@ -34,11 +34,10 @@ desde un repositorio git:
 
 ```
 
-spring.cloud.config.server.git.uri=https://bitbucket.org/brightdog/config-repository
+spring.cloud.config.server.git.uri=https://github.com/edgar-code-repository/config-repository-example
 server.port=8100
 
 ```
-
 
 **Anotaciones:**
 
@@ -79,8 +78,9 @@ Se definen dos strings ("title", "message") a ser utilizados por la aplicación 
 
 **Dependencias:**
 
-Las siguientes dependencias permiten a la aplicación actuar como cliente del servicio de configuración
-y utilizar la librería Retry para reintentar la conexión al servicio de configuración:
+La dependencia Starter Config permite a la aplicación actuar como cliente del servicio de configuración. 
+
+Aop y Retry permiten realizr reintentos en la conexión al servicio de configuración:
 
 ```
   <dependency>
@@ -113,8 +113,9 @@ spring.cloud.config.uri=${CLOUD_CONFIG_SERVER_URI:http://localhost:8100}
 
 ```
 
-Se definen propiedades necesarias para que la aplicación ejecute reintentos de conexión
-al servicio de configuración, si es que este no está disponible temporalmente:
+Se definen propiedades utilizadas por la librería Retry, necesarias para que la aplicación 
+ejecute reintentos de conexión al servicio de configuración, si es que este no 
+está disponible temporalmente:
 
 ```
 
